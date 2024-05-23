@@ -2,7 +2,7 @@ import React from 'react';
 const Task = ({ task, onToggle, onDelete, onEdit ,index,onMove,dragItem,dragOverItem }) => {
   return (
     <div 
-      className="flex items-start mt-6 justify-between border-b-2 border-gray-50 cursor-move bg-white"
+      className="flex items-start mt-6 justify-between border-b border-gray-100 cursor-move bg-white px-3 py-2"
       draggable
       onDragStart={(e) => {dragItem.current = index }}
       onDragEnter={(e) => {dragOverItem.current = index }}
